@@ -21,12 +21,14 @@ void display(){
 }
 
 int main(){
+    cout<<"Enter no. of Vertices: ";
     cin>>v;
     graph.resize(v,list<int> ());
-    int e;
+    cout<<"Enter no. of Edges: ";
+    int e; // no. of edges
     cin>>e;
     while(e--){
-        int s, d;
+        int s, d; // source and destination
         cin>>s>>d;
         add_edge(s,d);
     }
