@@ -27,7 +27,7 @@ int main(){
     cin>>e;
     while(e--){
         int s, d, wt;
-        cin>>s>>d;
+        cin>>s>>d>>wt;
         add_edge(s,d,wt);
     }
     display();
