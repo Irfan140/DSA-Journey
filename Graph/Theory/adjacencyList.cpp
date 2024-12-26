@@ -35,4 +35,4 @@ int main(){
     display();
 }
 
-// for weighted give false to add_edge()
+// for directed graph give an extra parameter false to add_edge()
