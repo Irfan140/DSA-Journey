@@ -1,0 +1,42 @@
+# === C++ Compiled Output ===
+*.out           # Common Linux executable (e.g. a.out, main.out)
+*.o             # Object files
+*.so            # Shared libraries
+*.a             # Static libraries
+*.gch           # Precompiled headers
+*.exe           # Windows executables (just in case)
+*.dll           # Dynamic link libraries (Windows)
+*.d             # Dependency files
+*.mod           # Fortran module files
+
+# === Build Artifacts ===
+build/
+bin/
+*.log
+
+# === Editor/IDE Specific ===
+.vscode/
+*.swp          # Vim swap files
+*~             # Backup files
+
+# === macOS metadata ===
+.DS_Store
+
+# === Optional: Ignore core dumps ===
+core
+
+# === Optional: CMake or Makefiles ===
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# === Optional: Ignore by name ===
+a.out
+main
+test
+
+# === Optional: Temporary/backup files ===
+*.tmp
+*.bak
