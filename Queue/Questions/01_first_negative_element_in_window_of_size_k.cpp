@@ -16,14 +16,15 @@ int main() {
     }
 
     for(int i = 0; i <= n-k; i++) {
-        while(q.front() < i) q.pop();
-        if(q.front() >= i && q.front() < i+k) {
+        while(q.size() >0 && q.front() < i) q.pop();
+        if(q.size() >0 && q.front() >= i && q.front() < i+k) {
             // that index element is in the window
             ans[i] = arr[q.front()];
         }
         else {
             ans[i] = 0;
         }
+        if(q.size() == 0) ans[i] = 0;
         
     }
 
